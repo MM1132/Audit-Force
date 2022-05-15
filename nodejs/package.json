@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "name": "audit-force",
+  "version": "1.0.0",
+  "description": "Just a simple auditing thing :)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://01.kood.tech/git/Kanguste/audit-force.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.2.4"
+  }
+}
