@@ -1,6 +1,5 @@
-# Audit Force
+# Audit Force: JavaScript
 
-## A powerful tool to brute-force yourself through the auditing of the 01 Edu System. 
+## - Replace the variables in the code similarly to how we did it in the GoLang version's tutorial.
 
-#### Included **GoLang** and **JavaScript** versions. 
-![](preview-images/working.png)
+## - Then execute with `node main.js`
