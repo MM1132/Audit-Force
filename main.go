@@ -119,6 +119,7 @@ func main() {
 }
 
 func checkCode(client *http.Client, code string) (string, error) {
+	token := "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyMzY5IiwiaWF0IjoxNjUyNzg2MzU4LCJpcCI6IjIxMy4xODAuMTAuNTEsIDE3Mi4yMy4wLjIiLCJleHAiOjE2NTI4NzI3NTgsImh0dHBzOi8vaGFzdXJhLmlvL2p3dC9jbGFpbXMiOnsieC1oYXN1cmEtYWxsb3dlZC1yb2xlcyI6WyJ1c2VyIl0sIngtaGFzdXJhLWNhbXB1c2VzIjoie30iLCJ4LWhhc3VyYS1kZWZhdWx0LXJvbGUiOiJ1c2VyIiwieC1oYXN1cmEtdXNlci1pZCI6IjIzNjkiLCJ4LWhhc3VyYS10b2tlbi1pZCI6IjhkNzQxMGQwLTA1YzMtNDYzYy04ZGE1LTM2N2RmNjVmZTkwNSJ9fQ.MKCYfGCjTgGP8zPZAfC-xTdDHbU93-Wz725--7ObLvU"
 	grade := 1.2857142857142858
 	auditId := 12159
 	eventId := 20
@@ -137,7 +138,7 @@ func checkCode(client *http.Client, code string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	req.Header.Set("x-jwt-token", "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyMzY5IiwiaWF0IjoxNjUyNzg2MzU4LCJpcCI6IjIxMy4xODAuMTAuNTEsIDE3Mi4yMy4wLjIiLCJleHAiOjE2NTI4NzI3NTgsImh0dHBzOi8vaGFzdXJhLmlvL2p3dC9jbGFpbXMiOnsieC1oYXN1cmEtYWxsb3dlZC1yb2xlcyI6WyJ1c2VyIl0sIngtaGFzdXJhLWNhbXB1c2VzIjoie30iLCJ4LWhhc3VyYS1kZWZhdWx0LXJvbGUiOiJ1c2VyIiwieC1oYXN1cmEtdXNlci1pZCI6IjIzNjkiLCJ4LWhhc3VyYS10b2tlbi1pZCI6IjhkNzQxMGQwLTA1YzMtNDYzYy04ZGE1LTM2N2RmNjVmZTkwNSJ9fQ.MKCYfGCjTgGP8zPZAfC-xTdDHbU93-Wz725--7ObLvU")
+	req.Header.Set("x-jwt-token", token)
 	//req.Header.Set("Connection", "keep-alive")
 	//req.Header.Set("User-Agent", "Mozilla/5.0 (X11; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0")
 
